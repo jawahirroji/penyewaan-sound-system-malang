@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANDIT AUDIO - Penyewaan Sound System Profesional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo-bandit.png" alt="BANDIT AUDIO" class="logo-navbar">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#paket">Paket</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+                <div class="d-flex align-items-center ms-3 navbar-sosmed animate__animated animate__fadeInRight">
+                    <a href="https://www.instagram.com/bandit_audio_sound_sistem?igsh=bnRzaHFkamEzZTZj" target="_blank" class="text-white fs-4 me-3" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@bnd.audioproduction" target="_blank" class="text-white fs-4 me-3" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/6282232028593" target="_blank" class="text-white fs-4" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6282232028593" class="wa-float animate__animated animate__zoomIn" target="_blank" title="Chat WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero-section animate__animated animate__fadeIn">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-4 text-white">Sound System Profesional untuk Acara Anda</h1>
+                    <p class="lead text-white">Solusi audio terbaik untuk konser, pernikahan, seminar, dan acara lainnya</p>
+                    <a href="#kontak" class="btn btn-primary btn-lg">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami Section -->
+    <section id="tentang" class="py-5 bg-light animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2 class="text-center mb-5">Tentang Kami</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h4>Cerita BANDIT AUDIO</h4>
+                    <p>BANDIT AUDIO berdiri sejak 2010 sebagai penyedia layanan sound system profesional untuk berbagai acara di Indonesia. Kami berkomitmen memberikan kualitas suara terbaik dan pelayanan maksimal untuk setiap klien.</p>
+                    <h5 class="mt-4">Visi</h5>
+                    <p>Menjadi penyedia solusi audio terbaik dan terpercaya di Indonesia.</p>
+                    <h5>Misi</h5>
+                    <ul>
+                        <li>Menyediakan peralatan audio berkualitas tinggi</li>
+                        <li>Memberikan pelayanan profesional dan ramah</li>
+                        <li>Mendukung kesuksesan setiap acara klien</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>Tim Kami</h4>
+                    <ul class="list-unstyled">
+                        <li><strong>Andi Pratama</strong> – Founder & Sound Engineer</li>
+                        <li><strong>Budi Santoso</strong> – Operator Lapangan</li>
+                        <li><strong>Citra Dewi</strong> – Customer Service</li>
+                        <li><strong>Dedi Kurniawan</strong> – Teknisi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Booking Online Section -->
+    <section id="booking" class="py-5 animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2 class="text-center mb-5">Form Booking Online</h2>
+            <form class="row g-3 justify-content-center" id="bookingForm">
+                <div class="col-md-6">
+                    <input type="text" class="form-control mb-3" placeholder="Nama Lengkap" id="bookingName" required>
+                    <input type="tel" class="form-control mb-3" placeholder="Nomor Telepon" id="bookingPhone" required>
+                    <input type="date" class="form-control mb-3" placeholder="Tanggal Acara" id="bookingDate" required>
+                    <input type="text" class="form-control mb-3" placeholder="Lokasi Acara" id="bookingLocation" required>
+                    <select class="form-control mb-3" id="bookingPackage" required>
+                        <option value="">Pilih Paket</option>
+                        <option value="basic">Paket Basic</option>
+                        <option value="premium">Paket Premium</option>
+                        <option value="pro">Paket Pro</option>
+                    </select>
+                    <textarea class="form-control mb-3" rows="3" placeholder="Catatan Tambahan" id="bookingNote"></textarea>
+                    <a href="#" onclick="sendBookingWA();return false;" class="btn btn-success w-100"><i class="fab fa-whatsapp me-2"></i>Kirim Booking via WhatsApp</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section id="layanan" class="py-5 animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2 class="text-center mb-5">Layanan Kami</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp">
+                        <div class="card-body text-center">
+                            <i class="fas fa-music fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Sound System Profesional</h5>
+                            <p class="card-text">Peralatan audio berkualitas tinggi untuk berbagai jenis acara</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp">
+                        <div class="card-body text-center">
+                            <i class="fas fa-headphones fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Operator Profesional</h5>
+                            <p class="card-text">Tim operator berpengalaman untuk mengatur sound system</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tools fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Maintenance</h5>
+                            <p class="card-text">Perawatan rutin dan pemeliharaan peralatan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp">
+                        <div class="card-body text-center">
+                            <i class="fas fa-bolt fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Jasa Service Power Amplifier</h5>
+                            <p class="card-text">Menerima service, perbaikan, dan upgrade power amplifier berbagai tipe. Dikerjakan oleh teknisi berpengalaman.</p>
+                            <a href="https://wa.me/6282232028593?text=Halo%20BANDIT%20AUDIO%2C%20saya%20ingin%20konsultasi%20atau%20service%20power%20amplifier." target="_blank" class="btn btn-success mt-2"><i class="fab fa-whatsapp me-2"></i>Konsultasi via WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp">
+                        <div class="card-body text-center">
+                            <i class="fas fa-sync-alt fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Jasa Spool Speaker</h5>
+                            <p class="card-text">Melayani spool ulang speaker, perbaikan coil, dan tuning speaker untuk hasil suara maksimal.</p>
+                            <a href="https://wa.me/6282232028593?text=Halo%20BANDIT%20AUDIO%2C%20saya%20ingin%20konsultasi%20atau%20spool%20speaker." target="_blank" class="btn btn-success mt-2"><i class="fab fa-whatsapp me-2"></i>Konsultasi via WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp">
+                        <div class="card-body text-center">
+                            <i class="fas fa-box-open fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Pembuatan Box Sound System Custom</h5>
+                            <p class="card-text">Terima jasa pembuatan box speaker custom sesuai kebutuhan event, desain, dan spesifikasi Anda. Kualitas material dan finishing terbaik!</p>
+                            <a href="https://wa.me/6282232028593?text=Halo%20BANDIT%20AUDIO%2C%20saya%20ingin%20konsultasi%20dan%20memesan%20jasa%20pembuatan%20box%20sound%20system%20custom." target="_blank" class="btn btn-success mt-2"><i class="fab fa-whatsapp me-2"></i>Konsultasi via WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Details Section -->
+    <section id="peralatan" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Spesifikasi Peralatan</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Speaker System</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <h6>Speaker Main 15"</h6>
+                                    <p class="text-muted">- Power: 1000W RMS<br>
+                                    - Frequency Response: 45Hz-20kHz<br>
+                                    - Sensitivity: 98dB<br>
+                                    - Impedance: 8 Ohm</p>
+                                </li>
+                                <li class="mb-3">
+                                    <h6>Subwoofer 18"</h6>
+                                    <p class="text-muted">- Power: 2000W RMS<br>
+                                    - Frequency Response: 30Hz-150Hz<br>
+                                    - Sensitivity: 100dB<br>
+                                    - Impedance: 4 Ohm</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Audio Processing</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <h6>Digital Mixer</h6>
+                                    <p class="text-muted">- 24 Input Channels<br>
+                                    - 16 Output Channels<br>
+                                    - Built-in Effects Processor<br>
+                                    - Digital Signal Processing</p>
+                                </li>
+                                <li class="mb-3">
+                                    <h6>Power Amplifier</h6>
+                                    <p class="text-muted">- Power Output: 4000W per channel<br>
+                                    - Class D Technology<br>
+                                    - Advanced Protection Circuit<br>
+                                    - Temperature Monitoring</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Types Section -->
+    <section id="jenis-acara" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Jenis Acara yang Kami Layani</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Wedding">
+                        <div class="card-body">
+                            <h5 class="card-title">Pernikahan</h5>
+                            <p class="card-text">Sound system profesional untuk acara pernikahan indoor dan outdoor dengan kualitas suara yang jernih dan sistem yang handal.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> Sistem PA Lengkap</li>
+                                <li><i class="fas fa-check text-success"></i> Operator Profesional</li>
+                                <li><i class="fas fa-check text-success"></i> Backup System</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp">
+                        <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Concert">
+                        <div class="card-body">
+                            <h5 class="card-title">Konser & Festival</h5>
+                            <p class="card-text">Sistem audio berkekuatan tinggi untuk konser dan festival dengan coverage area yang luas dan kualitas suara premium.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> Line Array System</li>
+                                <li><i class="fas fa-check text-success"></i> Multiple Subwoofer</li>
+                                <li><i class="fas fa-check text-success"></i> Stage Monitor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp">
+                        <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Corporate">
+                        <div class="card-body">
+                            <h5 class="card-title">Korporat & Seminar</h5>
+                            <p class="card-text">Sistem audio yang dirancang khusus untuk presentasi dan seminar dengan kejelasan suara yang optimal.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> Conference System</li>
+                                <li><i class="fas fa-check text-success"></i> Wireless Microphone</li>
+                                <li><i class="fas fa-check text-success"></i> Recording Setup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Berapa lama waktu pemesanan yang diperlukan?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Kami menyarankan pemesanan minimal 1 minggu sebelum acara untuk memastikan ketersediaan peralatan dan operator. Namun, untuk acara besar, sebaiknya pesan 1-2 bulan sebelumnya.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Apakah ada biaya tambahan untuk operator?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Biaya operator sudah termasuk dalam paket yang dipilih. Setiap paket memiliki jumlah operator yang sesuai dengan kebutuhan acara.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Bagaimana jika terjadi kerusakan pada peralatan?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Kami memiliki sistem backup untuk setiap peralatan. Jika terjadi kerusakan, tim teknis kami akan segera mengganti dengan peralatan yang sama. Semua peralatan kami dijamin berfungsi dengan baik.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TikTok Showcase Section -->
+    <section id="tiktok-showcase" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Lihat Kami di TikTok</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center mb-4">
+                    <p class="lead">Ikuti perjalanan kami di TikTok untuk melihat video-video terbaru dari event yang kami layani</p>
+                    <a href="https://www.tiktok.com/@bnd.audioproduction" target="_blank" class="btn btn-primary btn-lg mb-4">
+                        <i class="fab fa-tiktok me-2"></i>@bnd.audioproduction
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp">
+                        <div class="card-body text-center">
+                            <i class="fab fa-tiktok fa-3x text-primary mb-3"></i>
+                            <h5>Sound System Profesional</h5>
+                            <p>Lihat setup sound system kami untuk berbagai jenis acara</p>
+                            <a href="https://www.tiktok.com/@bnd.audioproduction" target="_blank" class="btn btn-outline-primary">Lihat Video</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp">
+                        <div class="card-body text-center">
+                            <i class="fas fa-video fa-3x text-primary mb-3"></i>
+                            <h5>Behind The Scene</h5>
+                            <p>Momen-momen menarik dari setiap event yang kami layani</p>
+                            <a href="https://www.tiktok.com/@bnd.audioproduction" target="_blank" class="btn btn-outline-primary">Lihat Video</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp">
+                        <div class="card-body text-center">
+                            <i class="fas fa-music fa-3x text-primary mb-3"></i>
+                            <h5>Testimoni Klien</h5>
+                            <p>Pengalaman klien dengan layanan kami</p>
+                            <a href="https://www.tiktok.com/@bnd.audioproduction" target="_blank" class="btn btn-outline-primary">Lihat Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@bnd.audioproduction" target="_blank" class="btn btn-dark me-2">
+                            <i class="fab fa-tiktok me-2"></i>Follow TikTok
+                        </a>
+                        <a href="https://www.instagram.com/bnd.audioproduction" target="_blank" class="btn btn-dark me-2">
+                            <i class="fab fa-instagram me-2"></i>Follow Instagram
+                        </a>
+                        <a href="https://wa.me/6282232028593" target="_blank" class="btn btn-dark">
+                            <i class="fab fa-whatsapp me-2"></i>Hubungi Kami
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paket Section -->
+    <section id="paket" class="py-5 bg-light animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2 class="text-center mb-5">Paket Layanan</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__fadeInUp">
+                        <div class="card-header text-center">
+                            <h4>Paket Basic</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> 2 Speaker 15"</li>
+                                <li><i class="fas fa-check text-success"></i> 1 Mixer 8 Channel</li>
+                                <li><i class="fas fa-check text-success"></i> 2 Microphone</li>
+                                <li><i class="fas fa-check text-success"></i> Operator</li>
+                            </ul>
+                            <div class="text-center">
+                                <h5 class="mb-3">Rp 2.500.000/hari</h5>
+                                <a href="https://wa.me/6282232028593?text=Halo%20saya%20ingin%20memesan%20Paket%20Basic%20BANDIT%20AUDIO" target="_blank" class="btn btn-success"><i class="fab fa-whatsapp me-2"></i>Pesan via WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__fadeInUp">
+                        <div class="card-header text-center bg-primary text-white">
+                            <h4>Paket Premium</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> 4 Speaker 15"</li>
+                                <li><i class="fas fa-check text-success"></i> 2 Subwoofer 18"</li>
+                                <li><i class="fas fa-check text-success"></i> 1 Mixer 16 Channel</li>
+                                <li><i class="fas fa-check text-success"></i> 4 Microphone</li>
+                                <li><i class="fas fa-check text-success"></i> 2 Operator</li>
+                            </ul>
+                            <div class="text-center">
+                                <h5 class="mb-3">Rp 4.500.000/hari</h5>
+                                <a href="https://wa.me/6282232028593?text=Halo%20saya%20ingin%20memesan%20Paket%20Premium%20BANDIT%20AUDIO" target="_blank" class="btn btn-success"><i class="fab fa-whatsapp me-2"></i>Pesan via WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__fadeInUp">
+                        <div class="card-header text-center">
+                            <h4>Paket Pro</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> 6 Speaker 15"</li>
+                                <li><i class="fas fa-check text-success"></i> 4 Subwoofer 18"</li>
+                                <li><i class="fas fa-check text-success"></i> 1 Mixer 24 Channel</li>
+                                <li><i class="fas fa-check text-success"></i> 6 Microphone</li>
+                                <li><i class="fas fa-check text-success"></i> 3 Operator</li>
+                                <li><i class="fas fa-check text-success"></i> Lighting System</li>
+                            </ul>
+                            <div class="text-center">
+                                <h5 class="mb-3">Rp 7.500.000/hari</h5>
+                                <a href="https://wa.me/6282232028593?text=Halo%20saya%20ingin%20memesan%20Paket%20Pro%20BANDIT%20AUDIO" target="_blank" class="btn btn-success"><i class="fab fa-whatsapp me-2"></i>Pesan via WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni Section -->
+    <section id="testimoni" class="py-5 bg-light animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2 class="text-center mb-5">Testimoni Klien</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <h5 class="mb-0">John Doe</h5>
+                                <small class="text-muted">Event Wedding</small>
+                            </div>
+                            <p class="card-text">"Sound system yang sangat bagus dan operator yang profesional. Acara kami berjalan lancar!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <h5 class="mb-0">Jane Smith</h5>
+                                <small class="text-muted">Konser Musik</small>
+                            </div>
+                            <p class="card-text">"Kualitas suara yang luar biasa dan pelayanan yang memuaskan!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <h5 class="mb-0">Mike Johnson</h5>
+                                <small class="text-muted">Seminar</small>
+                            </div>
+                            <p class="card-text">"Tim yang sangat profesional dan peralatan yang berkualitas tinggi."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portofolio Section -->
+    <section id="portofolio" class="py-5 bg-light animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2 class="text-center mb-5">Portofolio Klien & Event</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <h5 class="card-title">Festival Musik Malang</h5>
+                            <p class="card-text">Event tahunan dengan ribuan penonton, BANDIT AUDIO dipercaya sebagai penyedia sound system utama.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <h5 class="card-title">Pernikahan Akbar Cikarang</h5>
+                            <p class="card-text">Sound system untuk pernikahan outdoor dengan tamu VIP dan artis nasional.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <h5 class="card-title">Seminar Nasional Bekasi</h5>
+                            <p class="card-text">Acara seminar dengan kebutuhan audio clarity tinggi untuk ratusan peserta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Event Section -->
+    <section id="countdown-event" class="py-5 animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2 class="text-center mb-4">Countdown Event Spesial</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h4 class="mb-3">Grand Event BANDIT AUDIO</h4>
+                    <div id="countdown" class="mb-3" style="font-size:2rem;font-weight:600;"></div>
+                    <p>Jangan lewatkan event spesial kami! Segera booking sebelum kehabisan slot.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="py-5 bg-light animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2 class="text-center mb-4">Dapatkan Info Promo & Event</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <a href="https://wa.me/6282232028593?text=Halo%20BANDIT%20AUDIO%2C%20saya%20ingin%20berlangganan%20info%20promo%20dan%20event." target="_blank" class="btn btn-success w-100"><i class="fab fa-whatsapp me-2"></i>Berlangganan via WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-5 animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2 class="text-center mb-5">Hubungi Kami</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <a href="https://wa.me/6282232028593?text=Halo%20BANDIT%20AUDIO%2C%20saya%20ingin%20menghubungi%20dan%20bertanya%20tentang%20layanan%20sound%20system." target="_blank" class="btn btn-success w-100"><i class="fab fa-whatsapp me-2"></i>Hubungi via WhatsApp</a>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <h5 class="card-title">Informasi Kontak</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                                    Jl. Simpang Pakisaji, Jatirejo, Karangduren, Kec. Pakisaji, Kabupaten Malang, Jawa Timur 65162
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-phone text-primary me-2"></i>
+                                    +62 822-3202-8593
+                                </li>
+                            </ul>
+                            <div class="mt-4">
+                                <a href="https://maps.app.goo.gl/63tVSVXzCh27eCFR6" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-map-marked-alt me-2"></i>Lihat di Google Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="lokasi" class="py-5 animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2 class="text-center mb-5">Lokasi Kami</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">BANDIT AUDIO</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                                    Jl. Simpang Pakisaji, Jatirejo, Karangduren, Kec. Pakisaji, Kabupaten Malang, Jawa Timur 65162
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-phone text-primary me-2"></i>
+                                    +62 822-3202-8593
+                                </li>
+                            </ul>
+                            <div class="mt-4">
+                                <a href="https://maps.app.goo.gl/63tVSVXzCh27eCFR6" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-map-marked-alt me-2"></i>Lihat di Google Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp">
+                        <div class="card-body p-0">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.3141822075866!2d112.5834!3d-8.0655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78c1b0d4f2f0a1%3A0x0!2sBandit%20Audio!5e0!3m2!1sid!2sid!4v1647887654321!5m2!1sid!2sid" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>BANDIT AUDIO</h5>
+                    <p>Solusi audio profesional untuk acara Anda</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2024 BANDIT AUDIO. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+    // Countdown Event Script
+    const eventDate = new Date('2024-12-31T20:00:00');
+    const countdown = document.getElementById('countdown');
+    if(countdown) {
+        setInterval(() => {
+            const now = new Date();
+            const diff = eventDate - now;
+            if(diff > 0) {
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                const minutes = Math.floor((diff / (1000 * 60)) % 60);
+                const seconds = Math.floor((diff / 1000) % 60);
+                countdown.textContent = `${days} hari ${hours} jam ${minutes} menit ${seconds} detik`;
+            } else {
+                countdown.textContent = 'Event telah dimulai!';
+            }
+        }, 1000);
+    }
+
+    // Booking to WhatsApp
+    function sendBookingWA() {
+        var name = document.getElementById('bookingName').value;
+        var phone = document.getElementById('bookingPhone').value;
+        var date = document.getElementById('bookingDate').value;
+        var location = document.getElementById('bookingLocation').value;
+        var paket = document.getElementById('bookingPackage').value;
+        var note = document.getElementById('bookingNote').value;
+        var msg = `Halo BANDIT AUDIO,%0ASaya ingin booking sound system.%0A%0ANama: ${name}%0ANo. HP: ${phone}%0ATanggal Acara: ${date}%0ALokasi: ${location}%0APaket: ${paket}%0ACatatan: ${note}`;
+        var url = `https://wa.me/6282232028593?text=${msg}`;
+        window.open(url, '_blank');
+    }
+    </script>
+</body>
+</html>
